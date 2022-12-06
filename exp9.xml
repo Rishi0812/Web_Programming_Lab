@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type = "text/xsl" href = "exp9.xsl"?>
+<students>
+<student>
+<name>
+<name>abcssd</name>
+</name>
+<ssn>28</ssn>
+<age>19</age>
+<hobbies>cricket</hobbies>
+<address>Bengaluru</address>
+<Degree>BTech</Degree>
+<Course>Cse(AI/ML)</Course>
+</student>
+</students>
