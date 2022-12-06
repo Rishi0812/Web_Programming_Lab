@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        var regexp = /[@]/;
+        // Function to check Whether both passwords
+        // is same or not.
+        function checkPassword(form) {
+            password1 = form.password1.value;
+            password2 = form.password2.value;
+            username = form.name.value;
+
+            if (username.length < 6) {
+                alert('username has to be longer')
+            } else if (regexp.test(username)) {
+                alert("Can't have @ in username")
+            }
+            else if (password1 == '')
+                alert("Please enter Password");
+
+            // If confirm password not entered
+            else if (password2 == '')
+                alert("Please enter confirm password");
+
+            // If Not same return False.    
+            else if (password1 != password2) {
+                alert("\nPassword did not match: Please try again...")
+                return false;
+            } else {
+                alert("Password Match")
+                return true;
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <form onSubmit="return checkPassword(this)">
+
+        <label>Username:</label>
+        <input type="text" name="name" size=25>
+
+
+
+        <label>password:</label>
+        <input type="password" name="password1" size=25>
+
+
+        <label>re-enter password:</label>
+        <input type="password" name="password2" size=25>
+
+        <input type=submit value="Submit">
+
+    </form>
+</body>
+
+</html>
