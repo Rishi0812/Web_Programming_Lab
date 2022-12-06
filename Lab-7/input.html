@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> input[type=text]{ width: 100%; padding: 12px 20px; margin: 8px 0;
+display: inline-block; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-
+box;
+} button{
+width: 100%; background-color: #4CAF50; color: white; padding: 14px 20px;
+margin: 8px 0; border: none; border-radius: 4px;
+cursor: pointer;
+}
+</style>
+</head>
+<body>
+<h2>Redirect to a Webpage</h2>
+<p>Enter a name</p>
+<input type="text" id="myText">
+<button onclick="myFunction()">Move to next page</button>
+<script> function myFunction() { var x =
+document.getElementById("myText").value; localStorage.setItem('name', x);
+location.replace("redir.html");
+}
+</script>
+</body>
+</html>

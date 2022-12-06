@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script> function myFunction() { const name = localStorage.getItem('name');
+document.getElementById("text1").innerHTML = name;
+}
+</script>
+<style>
+</style>
+</head>
+<body onload="myFunction()">
+<h2 style="font-size: 50px; font-family:'Lucida Sans', 'Lucida Sans Regular',
+'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+">Hello <span id = "text1"></span></h2>
+<button onclick="myFunction()">Move to next page</button>
+</body>
+</html>
